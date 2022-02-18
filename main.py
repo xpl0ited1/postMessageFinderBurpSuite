@@ -72,7 +72,7 @@ class BurpExtender(IBurpExtender, IScannerCheck, IContextMenuFactory):
         issuelevel_addeventlistener = "Information"
         issuedetail_addeventlistener = """postMessage event listener Discovered: <b>$asset$</b>"""
 
-        regex_onmessage = "\.onMessage|\.onmessage"
+        regex_onmessage = "\.onMessage|\.onmessage|onmessage|onMessage"
         issuename_onmessage = "[postMessage Finder] postMessage onMessage event listener detected"
         issuelevel_onmessage = "Information"
         issuedetail_onmessage = """onMessage event listener Discovered: <b>$asset$</b>"""
@@ -139,7 +139,7 @@ class BurpExtender(IBurpExtender, IScannerCheck, IContextMenuFactory):
         issuelevel_addeventlistener = "Information"
         issuedetail_addeventlistener = """postMessage event listener Discovered: <b>$asset$</b>"""
 
-        regex_onmessage = "\.onMessage|\.onmessage"
+        regex_onmessage = "\.onMessage|\.onmessage|onmessage|onMessage"
         issuename_onmessage = "[postMessage Finder] postMessage onMessage event listener detected"
         issuelevel_onmessage = "Information"
         issuedetail_onmessage = """onMessage event listener Discovered: <b>$asset$</b>"""
